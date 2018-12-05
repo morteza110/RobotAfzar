@@ -3,8 +3,8 @@
 @import "variable";
 @import "button";
 
-div,input,button,label,span,p,h1,h2,h3,h4,h5,h6,select,title,textarea,a{
-  font-family: iransans;
+div,input,button,label,span,p,h1,h2,h3,h4,h5,h6,select,title,textarea,a, title{
+  font-family: iransans,Tahoma,sans-serif;
 }
 
 a{
@@ -17,6 +17,9 @@ a{
 }
 .text-small{
   font-size: $text-small;
+}
+.text-large{
+  font-size: $text-large;
 }
  .social-icon{
    width: $social-icon;
@@ -55,18 +58,49 @@ a{
   }
 }
 
-.list-categories1{
+.show2{
+  &:hover{
+    color: $red;
+    ul{
+      isplay: block;
+      opacity: 1;
+      z-index: 2;
+      position: absolute;
+      li{
+        a{
+          &:hover{
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+}
+.show_list{
+  &:hover{
+    color: $red !important;
+  }
+}
+
+.list-categories1, .list-categories2{
   display: none;
   overflow: hidden;
   transition: opacity 300ms ease;
   min-width: 120px;
 }
+.center{
+  margin{
+    right: auto;
+    left: auto;
+  }
+  float: none;
+}
 
 #gotoTop {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 40px;
+  right: 40px;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -96,10 +130,19 @@ a{
 .w-40{
   width: 40%;
 }
-
-.bg-robot{
-  background: url("../images/tuts.png") no-repeat;
+.w-60{
+  width: 60%;
 }
+.w-70{
+  width: 70%;
+}
+.bg-robot{
+  background: fixed;
+  @extend .bg-dark;
+  background-image: url("../images/RoboticsHeroBanner1-P.jpg");
+  background-position: bottom;
+}
+
 .color-red{
   color: $red;
 }
@@ -114,13 +157,72 @@ a{
 
 .pagination{
   .active{
-
     .page-link{
       background-color: $red;
       color: white;
       border: 2px solid $red;
     }
   }
+}
+#show_list{
+  display: none;
+}
+
+show_list2{
+  @extend .show_list;
+  transition: right 0.2s ease 0s;
+  position: fixed;
+}
+.show_list3{
+  @extend .show_list;
+  transition: right 0.2s ease 0s;
+  position: fixed;
+}
+#main_list{
+  display: none;
+  transition: right 0.2s ease 0s;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.online_course{
+  &:hover{
+    button{
+      @extend .btn-primary;
+      background-color: $color-success !important;
+      border-color: $color-success !important;
+    }
+  }
+}
+.article{
+  &:hover{
+    button{
+      background-color: $color-success !important;
+      border-color: $color-success !important;
+      box-shadow: 0 .8rem .5rem rgba(0,0,0,.2)!important;
+    }
+  }
+}
+.mySlides{
+  transition: ;
+}
+
+.slide_icon{
+  &:hover{
+    background-color: $gray-100 !important;
+  }
+}
+
+.slide_icon:focus, .slide_icon:active, .slide_icon.active, .slide_icon:focus:active {
+  background-image: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.bg-small{
+  max-height: 45px;
 }
 
 @media (max-width: 575.98px) {

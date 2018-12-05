@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/icon.min.css">
+    <link rel="stylesheet" href="../../assets/css/animate.min.css">
+    <title> صفحه مطلب </title>
+</head>
+<body>
+
+<button onclick="topFunction()" id="gotoTop" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+<header class="w-100">
+    <div class="container hidden-lg hidden-md hidden-xl my-4">
+        <div class="row">
+            <div class="col-6 text-right">
+                <button class="border-0 bg-white" onclick="show_main_list()" > <i class="fas fa-align-justify"></i> </button>
+            </div>
+            <div class="col-10 navbar text-center px-0 py-0 fixed-top h-100 bg-white" id="main_list">
+                <div class="logo">
+                    <a href="#" class="show text-center"><li class="list-group-item rounded-0 border-bottom">
+                        <img src="../../assets/images/logomain.jpg" height="90px" width="230px" alt="">
+                    </li></a>
+                </div>
+                <nav>
+                    <ul class="list-unstyled text-right px-0 w-100 h-100">
+                        <li class="list-group-item border-0 align-items-center rounded-0" onclick="show_list2()">
+                            <a href="#" class="text-gray show_list">
+                                قالب وردپرس<i class="fas fa-angle-down mr-1 float-left"></i>
+                            </a>
+                            <ul class="list-unstyled text-right pr-2 py-2 list-categories1 bg-white"  id="show_list2">
+                                <a href="#">
+                                    <li class="list-item text-right text-gray" onclick="show_list3()">
+                                        تست ۱ <i class="fas fa-angle-down mr-1 float-left"></i>
+                                    </li>
+                                </a>
+                                <ul class="list-unstyled text-right pr-2 py-2 list-categories1 bg-white rounded"  id="show_list3">
+                                    <a href="#"> <li class="list-item text-right"> تست ۱ </li></a>
+                                    <a href="#"><li class="list-item text-right"> تست ۲ </li></a>
+                                    <a href="#"><li class="list-item text-right"> تست ۳ </li></a>
+                                    <a href="#"><li class="list-item text-right"> تست ۴ </li></a>
+                                </ul>
+                                <a href="#"><li class="list-item text-right text-gray"> تست ۲ </li></a>
+                                <a href="#"><li class="list-item text-right text-gray"> تست ۳ </li></a>
+                                <a href="#"><li class="list-item text-right text-gray"> تست ۴ </li></a>
+                            </ul>
+                        </li>
+
+                        <a href="#"><li class="list-group-item border-0 align-items-center rounded-0 text-gray show_list">
+                            افزونه وردپرس<i class="fas fa-angle-down mr-1 float-left"></i>
+                        </li></a>
+                        <a href="#"><li class="list-group-item border-0 align-items-center rounded-0 text-gray show_list">
+                            مقالات آموزشی<i class="fas fa-angle-down mr-1 float-left"></i>
+                        </li></a>
+                        <a href="#"><li class="list-group-item border-0 align-items-center rounded-0 text-gray show_list">
+                            دوره های آموزشی<i class="fas fa-angle-down mr-1 float-left"></i>
+                        </li>  </a>
+                        <a href="#"><li class="list-group-item border-0 align-items-center rounded-0 text-gray show_list">
+                            ژاکت<i class="fas fa-angle-down mr-1 float-left"></i>
+                        </li> </a>
+                        <a href="#"><li class="list-group-item border-0 align-items-center rounded-0 text-gray show_list">
+                            طراحی سایت<i class="fas fa-angle-down mr-1 float-left"></i>
+                        </li></a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-6  text-left" onclick="hide_main_list()">
+                <div class="row" dir="ltr">
+                    <div class="search d-inline-block mx-3" id="search_icon">
+                        <a href="#"> <i class="fas fa-search color-red animated infinite slow tada delay-s"></i> </a>
+                    </div>
+                    <div class="user d-inline-block mx-1" id="user_icon">
+                        <a href=""> <i class="fas fa-user color-red animated infinite slow tada delay-s"></i> </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container text-center hidden-sm hidden-xs">
+        <div class="row">
+            <div class="row w-100 d-flex justify-content-between">
+                <div class="logo col-xs-12 col-6 align-items-center pr-0">
+                    <a href="#"><img src="../../assets/images/logomain.jpg" class="float-right" style="width:204px ;height: 80px"></a>
+                </div>
+                <div class="col-xs-12 col-6 pl-0 search d-flex align-items-center">
+                    <div class="contact d-flex align-items-center">
+                        <a href="#" class="text-dark text-center p-3"> ۰۲۱-۸۸۱۴۸۱۸۸ <i class="fas fa-flip-horizontal fa-phone hvr-buzz Out color-red"></i> </a>
+                        <a href="#" class="text-dark text-center pl-2"> <i class="fas fa-shopping-cart color-red"></i> </a>
+                    </div>
+                    <form action="" class="input-group form-group form-inline my-0 mr-4 d-flex align-items-center float-left w-60" dir="ltr">
+                        <button class="position-relative h-100 bg-white ml-2 border-0 float-left" name="button" style="z-index: 100"><i class="fas fa-search color-red animated infinite slow tada delay-s"></i></button>
+                        <input type="text" class="form-control position-absolute shadow rounded m-0 w-100 float-left" dir="rtl" placeholder="نام مقاله یا آموزش را جستجو کنید" >
+                    </form>
+                </div>
+            </div>
+            <hr class="w-100 mb-0">
+            <div class="w-100 text-center bg-white" id="fixed_top">
+                <div class="d-none w-100 d-flex align-items-center py-3" id="add_container">
+                    <nav class="col-lg-7 px-0" id="scroll_col9">
+                        <div class="bg-light d-flex align-items-center">
+                            <ul class="list-inline pr-0 bg-white d-flex align-items-center mb-0 w-100 justify-content-between">
+                                <li class=" d-none" id="logo_scroll">
+                                    <a href="#"><img src="../../assets/images/logomain.jpg" class="float-right" style="width:204px ;height: 80px"></a>
+                                </li>
+                                <li class=" active show">
+                                    <a class="" href="#"> قالب وردپرس <span class="sr-only"></span></a>
+                                    <ul class="list-unstyled text-right pr-2 py-2 list-categories1 border shadow bg-white rounded">
+                                        <li class="list-item text-right show2">
+                                            <a href="">
+                                                تست ۱ <i class="fas fa-angle-down ml-3 float-left"></i>
+                                            </a>
+                                            <ul class="list-unstyled text-right pr-2 py-2 list-categories2 border shadow bg-white rounded">
+                                                <li class="list-item text-right"><a href="">تست ۱</a></li>
+                                                <li class="list-item text-right"><a href=""> تست ۲ </a></li>
+                                                <li class="list-item text-right"><a href=""> تست ۳ </a></li>
+                                                <li class="list-item text-right"><a href=""> تست ۴ </a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-item text-right"><a href=""> تست ۲ </a></li>
+                                        <li class="list-item text-right"><a href=""> تست ۳ </a></li>
+                                        <li class="list-item text-right"><a href=""> تست ۴ </a></li>
+                                    </ul>
+                                </li>
+                                <li class=" show">
+                                    <a class="" href="#"> افزونه وردپرس </a>
+                                    <ul class="list-unstyled text-right pr-2 py-2 list-categories1 border shadow bg-white rounded">
+                                        <a href=""> <li class="list-item text-right"> تست ۱ </li></a>
+                                        <a href=""><li class="list-item text-right"> تست ۲ </li></a>
+                                        <a href=""><li class="list-item text-right"> تست ۳ </li></a>
+                                        <a href=""><li class="list-item text-right"> تست ۴ </li></a>
+                                    </ul>
+                                </li>
+                                <li class=" show">
+                                    <a class="" href="#"> مقالات آموزشی </a>
+                                    <ul class="list-unstyled text-right pr-2 py-2 list-categories1 border shadow bg-white rounded">
+                                        <a href=""> <li class="list-item text-right"> تست ۱ </li></a>
+                                        <a href=""><li class="list-item text-right"> تست ۲ </li></a>
+                                        <a href=""><li class="list-item text-right"> تست ۳ </li></a>
+                                        <a href=""><li class="list-item text-right"> تست ۴ </li></a>
+                                    </ul>
+                                </li>
+                                <li class=" show">
+                                    <a class="" href="#"> دوره های آموزشی </a>
+                                    <ul class="list-unstyled text-right pr-2 py-2 list-categories1 border shadow bg-white rounded">
+                                        <a href=""> <li class="list-item text-right"> تست ۱ </li></a>
+                                        <a href=""><li class="list-item text-right"> تست ۲ </li></a>
+                                        <a href=""><li class="list-item text-right"> تست ۳ </li></a>
+                                        <a href=""><li class="list-item text-right"> تست ۴ </li></a>
+                                    </ul>
+                                </li>
+                                <li class=" show">
+                                    <a class="" href="#"> ژاکت </a>
+                                    <ul class="list-unstyled text-right pr-2 py-2 list-categories1 border shadow bg-white rounded">
+                                        <a href=""> <li class="list-item text-right"> تست ۱ </li></a>
+                                        <a href=""><li class="list-item text-right"> تست ۲ </li></a>
+                                        <a href=""><li class="list-item text-right"> تست ۳ </li></a>
+                                        <a href=""><li class="list-item text-right"> تست ۴ </li></a>
+                                    </ul>
+                                </li>
+                                <li class="show">
+                                    <a class="" href="#"> طراحی سایت </a>
+                                    <ul class="list-unstyled text-right pr-2 py-2 list-categories1 border shadow bg-white rounded">
+                                        <a href=""> <li class="list-item text-right"> تست ۱ </li></a>
+                                        <a href=""><li class="list-item text-right"> تست ۲ </li></a>
+                                        <a href=""><li class="list-item text-right"> تست ۳ </li></a>
+                                        <a href=""><li class="list-item text-right"> تست ۴ </li></a>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                    <form action="" class="form-group form-inline mr-auto my-0 d-flex align-items-center float-left">
+                        <button class="form-control btn btn-primary ml-3"> ثبت نام </button>
+                        <a href="#"> ورود <i class="fas fa-angle-down mr-1"></i> </a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="py-sm-5 bg-gray-100" onclick="hide_main_list()">
+
+    <div class="container hidden-xs">
+        <div class="row">
+            <div class="col-12 px-0">
+                <div class="row w-100 m-0">
+                    <div class="list text-right border bg-small rounded bg-white w-100 px-3 shadow">
+                        <nav class="w-100">
+                            <a class="text-gray" href="#"> خانه </a>
+                            <img src="../../assets/images/breadcrumbs.png" alt="">
+                            <a class="text-gray" href="#"> صفحه مطالب </a>
+                            <img src="../../assets/images/breadcrumbs.png" alt="">
+                            <a class="text-gray" href="#"> مقاله آموزشی </a>
+                            <img src="../../assets/images/breadcrumbs.png" alt="">
+                            <a class="text-gray" href="#"> قالب های شرکتی </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-12 col-sm-12">
+                <div class="row">
+                    <div class="card border shadow lg-rounded w-100">
+                        <div class="card-title">
+                            <h5 class="text-right pt-3 pr-3">
+                                آموزش سئوی وردپرس با Yoast SEO به همراه سوالات متداول
+                            </h5>
+                        </div>
+                        <hr class="text-gray m-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="categories pr-4">
+                                    <div class="row text-gray d-flex align-items-center">
+                                        <i class="fas fa-list-ul"></i>
+                                        <span class="mr-2 text-small"> دسته بندی ها:  </span>
+                                        <span class="text-small"> <a href="" class="text-gray">آموزش وردپرس </a> ,
+                                        <a href=""class="text-gray">آموزش ویدیویی</a> ,
+                                        <a href=""class="text-gray">آموزش افزونه</a> ,
+                                            <a href=""class="text-gray">آموزش وردپرس</a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="date mr-5 pr-4 text-small position-relative pt-1 text-gray">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span> ۱۰ آذر ۱۳۹۷ </span>
+                                </div>
+                                <div class="views mr-5 float-left text-small position-relative pt-1 text-gray">
+                                    <i class="fas fa-chart-bar"></i>
+                                    <span> ۱۳۷۸۴ </span>
+                                    بازدید
+                                </div>
+                            </div>
+                            <div class="row mt-3" dir="ltr">
+                                <div class="comment text-gray text-small text-left px-3" dir="rtl">
+                                    <span> ۹ رای از ۴۶ رای </span>
+                                </div>
+                                <div class="stars text-left text-small text-gray float-left">
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="card-body text-right" dir="rtl">
+                                <div class="row">
+                                    <p class="text-justify d-inline-block"> همان‌طور که می‌دانید مقوله سئوی وردپرس از موارد بسیار مهم در هر نوعی از وبسایت است که باید توجه شایانی به آن داشت. سئوی وردپرس دارای بخش‌های گسترده‌ای است که برای همگان قابل درک نیست اما به هر جهت باید تلاش کرد تا محتوای وبسایت را به گونه‌ای مناسب برای موتورهای جستجو بهینه کنیم تا بتوان قدمی در جهت بهبود جایگاه وبسایت برداشت. یکی از راه‌کارهای مناسب برای بهینه‌سازی محتوای وبسایت در وردپرس استفاده از افزونه‌های سئوی وردپرس است که در این میان افزونه Yoast SEO جایگاه ویژه‌ای را به خود اختصاص داده است و تقریبا می‌توان گفت در امر بهینه‌سازی همه چیز است. </p>
+                                    <img src="../../assets/images/Smartwebmasters_logo-360x225.png" alt="">
+                                    <h3 class="w-100"> سیوی وردپرس </h3>
+                                    <p class="text-justify">
+                                        افزونه Yoast SEO مورد مناسبی برای ارزیابی عناصر سئوی داخلی است اما به این معنی نیست که پس از نصب آن کار تمام شده! این افزونه مواردی که از نظر موتورهای جستجو حائز اهمیت هستند را بررسی کرده و پیشنهادهایی در جهت بهبود آن‌ها ارائه می‌دهد. ویژگی بسیار خوب Yoast SEO این است که هم
+                                    زمان با تهیه محتوا آن را بررسی می‌کند و در انتهای مقاله بخشی برای بهبود ارائه می‌دهد که نسبت به تغییرات محتوا واکنش داده و کاملاً پویا <است></است>
+                                    </p>
+                                    <h6>  سپی ورد پرس با yoasts </h6>
+                                    <div class="bg-success mr-auto ml-auto" style="width: 700px; height: 200px"></div>
+                                    <p class="text-justify">
+                                        افزونه Yoast SEO یکی از افزونه‌های اصلی در حوزه سئوی وردپرس است که فعالیت خود را از سال ۲۰۰۸ میلادی آغاز کرد و بروزرسانی‌های مداوم، آن را محبوب کرده است به‌طوری که هم‌اکنون بیش از ۵ میلیون نصب فعال را با امتیاز ۴٫۹ از ۵ به خود اختصاص داده است. این افزونه قوانینی را در توابع خود جای داده که نتیجه نهایی موردپسند ربات‌های گوگل و کاربران قرار گیرد.
+                                    </p>
+                                    <h5 class="d-block w-100"> امکامات وردپرس </h5>
+                                    <br>
+                                    <ul class="list-unstyled w-100 pr-3">
+                                        <li> <i class="fas fa-check"></i> تست ۶۳۴۳۱ </li>
+                                        <li> <i class="fas fa-check"></i> تست ۶۳۴۳۱ </li>
+                                        <li> <i class="fas fa-check"></i> تست ۶۳۴۳۱ </li>
+                                        <li> <i class="fas fa-check"></i> تست ۶۳۴۳۱ </li>
+                                        <li> <i class="fas fa-check"></i> تست ۶۳۴۳۱ </li>
+                                        <li> <i class="fas fa-check"></i> تست ۶۳۴۳۱ </li>
+                                    </ul>
+                                    <h5> نصب و افزودن افزونه </h5>
+                                    <p class="text-justify">
+                                        ای شروع کار افزونه Yoast SEO را از انتهای مقاله دانلود کرده و در پنل مدیریتی وردپرس به منوی افزونه‌ها و زیر منوی افزودن رجوع کنید. سپس اقدام به نصب و فعال‌سازی افزونه کنید. پس از فعال‌سازی منوی جدیدی تحت عنوان سئو به پنل مدیریتی وردپرس شما اضافه خواهد
+                                    </p>
+                                    <div class="col-4 text-center bg-dark mr-auto ml-auto" style="height: 200px"></div>
+                                    <h5 class="text-danger w-100">  نتیجعه گیری </h5>
+                                    <p class="text-justify">
+                                        سئوی وردپرس بخش مهمی است که صاحبان وبسایت‌ها باید توجه ویژه‌ای به آن داشته باشند. سیستم مدیریت محتوای وردپرس نیز از این قاعده مستثنا نیست و وبسایت‌های طراحی‌شده با وردپرس نیز باید به این مقوله توجه کنند. خوشبختانه افزونه‌های متعددی در این زمینه طراحی و توسعه داده شده‌اند که از این میان افزونه <span class="text-danger"> toust sew </span> جزء برترین‌ها است.
+
+                                        شما با نصب این افزونه می‌توانید گامی محکم برای بهبود وضعیت وبسایت خود بگیرید. پس امتحانش کنید و اگر استفاده می‌کنید به نسخه جدید بروزرسانی کنید.
+                                    </p>
+                                    <p class="mt-3" dir="rtl"> برای خریدن این قالب میتوانید <a href="" class="text-danger"> از این لینک  </a>آن را دانلود کنید   </p>
+                                    <h5 class="w-100"> ویدیو آموزشی </h5>
+                                    <div class="col-11 bg-primary ml-auto mr-auto text-center d-flex align-items-center " style="height: 300px">
+                                        <a href="#" class="text-center"><i class="hvr-buzz far fa-play-circle fa-3x text-danger"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12 text-center pl-md-0" id="sidebar">
+                <div class="box card shadow mb-3 lg-rounded">
+                    <a href="#"> <img src="../../assets/images/smartw13Side.png" class="w-100 lg-rounded" alt=""> </a>
+                </div>
+                <div class="box card my-3 shadow lg-rounded">
+                    <a href="#"> <img src="../../assets/images/ScanSidebar.jpg" class="w-100 lg-rounded" alt=""> </a>
+                </div>
+                <div class="box card my-3 shadow lg-rounded">
+                    <a href="#"> <img src="../../assets/images/webdesign_side.jpg" class="w-100 lg-rounded" alt=""> </a>
+                </div>
+                <div class="box card shadow my-3 lg-rounded register">
+                    <a href="#" class="text-center"> <img src="../../assets/images/register_hamyarwp.gif" class="rounded " alt=""> </a>
+                    <br>
+                    <div class="register text-center" dir="rtl">
+                        <h6 class="text-right pr-4"> باعضویت در شرکت ربات افزار: </h6>
+                        <ul class="text-right">
+                            <li>به طور مستقیم دانلود کنید</li>
+                            <li>۱۰ امتیاز هدیه دریافت نمایید</li>
+                            <li>از پنل کاربری پیشرفته لذت ببرید</li>
+                        </ul>
+                        <div class="col-xs-6">
+                            <button class="btn btn-danger text-center mb-3"> همین حالا عضو شوید </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card shadow my-3 text-center lg-rounded">
+                    <a href="#"> <img src="../../assets/images/samandehi.png" class="w-100 lg-rounded" alt=""> </a>
+                </div>
+                <div class="box card shadow my-3 lg-rounded">
+                    <div class="row py-3">
+                        <div class="col-9 d-flex align-items-center">
+                            <h6 class="mb-0 pr-3 d-inline-block text-small">  مطالب برتر این ماه </h6>
+                        </div>
+                        <div class="arrow float-left">
+                            <div class="row">
+                                <button class="btn bg-white slide_icon border-0" onclick="plusDivs(-1)"><i class="fas fa-chevron-right"></i></button>
+                                <button class="btn bg-white slide_icon border-0" onclick="plusDivs(+1)"><i class="fas fa-chevron-left"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-0">
+                    <div class="card-body px-3">
+                        <div class="mySlides">
+                            <div class="best d-flex align-items-center py-1">
+                                <a href="#">
+                                    <div class="image float-right d-inline-block rounded" style="height: 100px">
+                                        <img src="../../assets/images/smartw13Side.png" height="70px" class="rounded" alt="">
+                                    </div>
+                                    <div class="text float-right pr-2 d-inline-block w-70 ">
+                                        <p class="text-right w-100 text-small">  لورم ایپسوم میتن ساختگی هست. شرکت ربات افزا. </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="best d-flex align-items-center py-1">
+                                <a href="#">
+                                    <div class="image float-right d-inline-block rounded" style="height: 100px">
+                                        <img src="../../assets/images/smartw13Side.png" height="70px" class="rounded" alt="">
+                                    </div>
+                                    <div class="text float-right pr-2 d-inline-block w-70 ">
+                                        <p class="text-right w-100 text-small">  لورم ایپسوم میتن ساختگی هست. شرکت ربات افزا. </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="best d-flex align-items-center">
+                                <a href="#">
+                                    <div class="image float-right d-inline-block rounded" style="height: 100px">
+                                        <img src="../../assets/images/smartw13Side.png" height="70px" class="rounded" alt="">
+                                    </div>
+                                    <div class="text float-right pr-2 d-inline-block w-70 ">
+                                        <p class="text-right w-100 text-small ">  لورم ایپسوم میتن ساختگی هست. شرکت ربات افزا. </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mySlides">
+                            <div class="best d-flex align-items-center">
+                                <a href="#">
+                                    <div class="image float-right d-inline-block rounded" style="height: 100px">
+                                        <img src="../../assets/images/woocommerce-getway-hamyarwp-150x150.jpg" height="70px" class="rounded" alt="">
+                                    </div>
+                                    <div class="text float-right pr-2 d-inline-block w-70 ">
+                                        <p class="text-right w-100 text-small">  لورم ایپسوم میتن ساختگی هست. شرکت ربات افزا. </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="best d-flex align-items-center">
+                                <a href="#">
+                                    <div class="image float-right d-inline-block rounded" style="height: 100px">
+                                        <img src="../../assets/images/woocommerce-getway-hamyarwp-150x150.jpg" height="70px" class="rounded" alt="">
+                                    </div>
+                                    <div class="text float-right pr-2 d-inline-block w-70 ">
+                                        <p class="text-right w-100 text-small ">  لورم ایپسوم میتن ساختگی هست. شرکت ربات افزا. </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="best d-flex align-items-center">
+                                <a href="#">
+                                    <div class="image float-right d-inline-block rounded" style="height: 100px">
+                                        <img src="../../assets/images/woocommerce-getway-hamyarwp-150x150.jpg" height="70px" class="rounded" alt="">
+                                    </div>
+                                    <div class="text float-right pr-2 d-inline-block w-70 ">
+                                        <p class="text-right w-100 text-small ">  لورم ایپسوم میتن ساختگی هست. شرکت ربات افزا. </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card shadow mb-3  lg-rounded">
+                    <a href="#"> <img src="../../assets/images/smartw13Side.png" class="w-100 lg-rounded" alt=""> </a>
+                </div>
+                <div class="box card my-3 shadow  lg-rounded">
+                    <a href="#"> <img src="../../assets/images/ScanSidebar.jpg" class="w-100 lg-rounded" alt=""> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="container-fluid bg-robot hidden-sm hidden-xs" style="height: 120px">
+    <div class="container h-100" style="opacity: 100% !important;">
+        <div class="row h-100">
+            <div class="col-xs-12 col-md-6 d-flex align-items-center text-white">
+                <p class="bg-dark rounded text-large"> تاکنون ۵۶۴ نفر در ربات افزار ثبت نام کرده اند </p>
+            </div>
+            <div class="col-xs-12 col-md-6 d-flex align-items-center" dir="ltr">
+                <a href="#"><button class="btn btn-success"> شرکت در دوره های آنلاین <i class="fas fa-university"></i> </button> </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container py-5" dir="rtl">
+        <div class="col-xs-12">
+            <div class="row hidden-xs hidden-sm">
+                <div class="story_wishing col-12">
+                    <div class="profile_picture col-2 align-items-end">
+                        <img src="../../assets/images/ali.jpg" class="float-right" alt="">
+                    </div>
+                    <div class="wish float-right col-10" dir="rtl">
+                        <h5 class="text-primary text-right"> داستان یک آرزو </h5>
+                        <p class="text-right">همیشه آرزو داشتم یک منبع آموزشی فارسی وردپرس می بود تا علاوه بر یادگیری ساده تر وردپرس ، از پیشنهادات آموزشی آن استفاده میکردم. آن آرزو، اکنون، "همیار وردپرس" نام دارد </p>
+                        <span class="text-danger float-right"> علی حاجی محمدی </span>
+                        <br>
+                        <span class="text-danger float-right"> بنیان گذار همیار وردپرس </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="main_footer py-5 col-12">
+                    <form action="" class="form-group col-lg-6 col-md-6 col-12 hidden-xs hidden-sm" method="post">
+                        <div class="row d-flex justify-content-between">
+                            <input type="text" class="form-control" style="width: 48%" placeholder="نام" required>
+                            <input type="tel" class="form-control pr-2" style="width: 48%" placeholder="شماره تلفن" required>
+                        </div>
+                        <div class="row py-2 d-flex justify-content-between">
+                            <input type="email" class="form-control w-100" placeholder="ایمیل" style="width: 80%" required>
+                            <button class="btn btn-success float-left mt-2"> عضویت  <i class="fas fa-exclamation"></i></button>
+                        </div>
+                    </form>
+                    <div class="row  hidden-sm hidden-xs">
+                        <div class="nav col-xs-9 pr-0">
+                            <ul class="nav pr-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-small text-gray" href="#">استخدام</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-small text-gray" href="#">تبلیغات</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-small text-gray" href="#">قالب وردپرس</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-small text-gray" href="#">پرداخت آنلاین</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-small text-gray" href="#">لوگو</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-small text-gray" href="#">درباره ما</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-small text-gray" href="#"> ارتباط با ما </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-small text-gray" href="#">کسب درآمد از اینترنت</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-3 float-left pull-left">
+                            <h5 class="float-left"> <span class="text-primary"> توصیه روبات افزار: </span>  <a href=""> ربات اینستاگرام ستارگان اینستا </a> </h5>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row bottom_footer">
+                        <div class="address col-12 col-md-6 float-right">
+                            <p class="text-right text-small text-gray">آدرس: تهران - عشرت آباد - میدان سپاه - خیابان خواجه نصیر طوسی - کوچه غزنوی پلاک 2 - طبقه دوم - واحد شرقی</p>
+                            <p class="text-right text-small text-gray"> تلفن : ۸۸۱۴۰۱۸۸-۰۲۱ </p>
+                        </div>
+                        <div class="social col-12 col-md-6 float-left pr-5">
+                            <div class="row d-flex justify-content-between text-center">
+                                <a href=""> <i class="fab fa-linkedin social-icon"></i> </a>
+                                <a href=""> <img src="../../assets/images/aparat.png" style="width: 22px; height: 22px" class="social-icon" alt=""> </a>
+                                <a href=""><i class="fas fa-paper-plane social-icon text-gray"></i></a>
+                                <a href=""><i class="fab fa-instagram social-icon text-gray"></i></a>
+                                <a href=""><i class="fas fa-rss social-icon text-gray"></i></a>
+                                <a href=""><i class="fab fa-google-plus-g social-icon text-gray"></i></a>
+                                <a href=""><i class="fab fa-twitter social-icon text-gray"></i></a>
+                                <a href=""><i class="fab fa-facebook-f social-icon text-gray"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="../../assets/js/slide.js"></script>
+<script src="../../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../../assets/js/popper.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/sticky-sidebar.js"></script>
+<script src="../../assets/js/scroll.js"></script>
+<script src="../../assets/js/app.js"></script>
+</body>
+</html>
