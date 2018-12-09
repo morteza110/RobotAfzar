@@ -69,15 +69,19 @@
             </div>
             <div class="col-6  text-left" onclick="hide_main_list()">
                 <div class="row" dir="ltr">
-                    <div class="search d-inline-block mx-3" id="search_icon">
+                    <div class="search d-inline-block mx-3" id="search_icon" onclick="show_search_box()">
                         <a href="#"> <i class="fas fa-search color-red animated infinite slow tada delay-s"></i> </a>
                     </div>
                     <div class="user d-inline-block mx-1" id="user_icon">
                         <a href=""> <i class="fas fa-user color-red animated infinite slow tada delay-s"></i> </a>
                     </div>
                 </div>
-
             </div>
+            <form action="#" class="inline w-100 bg-white fixed-top py-3 shadow border-bottom" style="display: none" id="search_box">
+                <input type="text" class="w-75 rounded float-right mr-2" placeholder="نام مقاله خود را وارد کنید">
+                <a href="#" class=" px-2"> <i class="fas fa-search color-red animated infinite slow tada delay-s" style="font-size: 23px;" ></i> </a>
+                <a href="#" onclick="hide_search_box()" class=" px-2"> <i class="fas fa-times color-red animated infinite slow tada delay-s" style="font-size: 25px;" ></i> </a>
+            </form>
         </div>
     </div>
     <div class="container text-center hidden-sm hidden-xs">
@@ -189,7 +193,7 @@
         <div class="row">
             <div class="col-lg-9 col-md-9 col-12 col-sm-12">
                 <div class="row">
-                    <img src="../assets/images/webmasteranslider.png" class="w-100 lg-rounded" alt="">
+                    <img src="../assets/images/webmasteranslider.png" class="w-100 lg-rounded px-1 px-lg-0 main_slider" alt="">
                 </div>
                 <div class="row">
                     <div class="card videos w-100 lg-rounded mx-0 my-3">
@@ -526,7 +530,7 @@
     </div>
 </main>
 <div class="container-fluid bg-robot hidden-sm hidden-xs" style="height: 120px">
-    <div class="container h-100" style="opacity: 100% !important;">
+    <div class="container h-100 transparent-50">
         <div class="row h-100">
             <div class="col-xs-12 col-md-6 d-flex align-items-center text-white">
                 <p class="bg-dark rounded text-large"> تاکنون ۵۶۴ نفر در ربات افزار ثبت نام کرده اند </p>
@@ -538,13 +542,12 @@
     </div>
 </div>
 
-
 <footer>
     <div class="container py-5" dir="rtl">
         <div class="col-xs-12">
             <div class="row hidden-xs hidden-sm">
                 <div class="story_wishing col-12">
-                    <div class="profile_picture col-2 align-items-end">
+                    <div class="col-2 align-items-end">
                         <img src="../assets/images/ali.jpg" class="float-right" alt="">
                     </div>
                     <div class="wish float-right col-10" dir="rtl">
@@ -632,13 +635,6 @@
 <script src="../assets/js/popper.min.js"></script>
 <script src="../assets/js/bootstrap.min.js"></script>
 <script src="../assets/js/slick.js"></script>
-<script>
-  $(document).ready(function(){
-    $('.your-class').slick({
-      setting-name: setting-value
-  });
-  });
-</script>
 <script src="../assets/js/sticky-sidebar.js"></script>
 <script src="../assets/js/scroll.js"></script>
 <script src="../assets/js/app.js"></script>

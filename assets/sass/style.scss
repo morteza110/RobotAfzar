@@ -124,6 +124,10 @@ a{
   border-top-right-radius: 0px !important;
   border-top-left-radius: 0px !important;
 }
+.rounded-bottom-0{
+  border-bottom-right-radius: 0px!important;
+  border-bottom-left-radius: 0px !important;
+}
 .w-30{
   width: 30%;
 }
@@ -137,12 +141,16 @@ a{
   width: 70%;
 }
 .bg-robot{
-  background: fixed;
   @extend .bg-dark;
-  background-image: url("../images/RoboticsHeroBanner1-P.jpg");
+  background-image: url("../images/Robotic_border.jpg");
   background-position: bottom;
 }
 
+.name_relation{
+  &:hover{
+    color: $red !important;
+  }
+}
 .color-red{
   color: $red;
 }
@@ -205,14 +213,146 @@ show_list2{
     }
   }
 }
-.mySlides{
-  transition: ;
+
+.bg-dark-100{
+  background-color: $bg-dark-100;
 }
 
 .slide_icon{
   &:hover{
     background-color: $gray-100 !important;
   }
+}
+.transparent-50{
+  opacity: 50% !important;
+}
+
+.Indicator{
+  &:hover,&.active{
+    color: #fbb03b;
+    border-bottom: 2px solid #fbb03b !important;
+  }
+}.new{
+   &:hover,&.active{
+     color: #005cbf ;
+     border-bottom: 2px solid #005cbf !important;
+
+   }
+ }
+ .bg-yellow{
+   background-color: $yellow;
+ }
+
+ .join_for_comment{
+   &:hover{
+     background-color: red !important;
+     color: white !important;
+   }
+ }
+ .like{
+   &:hover{
+     @extend .btn-success;
+     background-color: $color-success !important;
+   }
+ }
+ .pagination{
+   .page-link{
+     &:hover{
+       background-color: $red;
+       color: white;
+     }
+   }
+ }
+
+ .user_profile{
+   width: 65px;
+   height: 65px;
+ }
+.comment_list:before {
+  content: '' !important;
+  position: absolute !important;
+  width: 2px !important;
+  height: 98% !important;
+  background: #e5e5e5 !important;
+  display: inline-block !important;
+  right: 50px !important;
+}
+.comment_list:after {
+  clear: both !important;
+  content: " " !important;
+  display: table !important;
+}
+.children:before{
+  content: '' !important;
+  position: absolute !important;
+  width: 85px !important;
+  height: 2px !important;
+  background: #e5e5e5 !important;
+  display: inline-block !important;
+  right: 68px !important;
+  top: 30px !important;
+  -webkit-transform: translateX(100%) !important;
+  -ms-transform: translateX(100%) !important;
+  -o-transform: translateX(100%) !important;
+  transform: translateX(100%) !important;
+}
+.read_content{
+  &:hover{
+    background-color: $gray-100 !important;
+    border: 0px solid rgba(55,55,55,.1) !important;
+    border-radius: 15px;
+    a{
+      .w-75{
+        h6{
+          color: $red !important;
+        }
+      }
+
+    }
+  }
+}
+
+.children:after{
+  content: '' !important;
+  position: absolute !important;
+  width: 16px !important;
+  height: 16px !important;
+  background: #19b0f5 !important;
+  display: inline-block !important;
+  right: -8px !important;
+  top: 21px !important;
+  -webkit-transform: translateX(100%) !important;
+  -ms-transform: translateX(100%) !important;
+  -o-transform: translateX(100%) !important;
+  transform: translateX(100%) !important;
+  border-radius: 50%;
+  border: 2px solid #fff !important;
+  box-shadow: 1px 1px 7px rgba(0,0,0,.2) !important;
+  -moz-box-shadow: 1px 1px 7px rgba(0,0,0,.2) !important;
+  -webkit-box-shadow: 1px 1px 7px rgba(0,0,0,.2) !important;
+  -ms-box-shadow: 1px 1px 7px rgba(0,0,0,.2) !important;
+  -o-box-shadow: 1px 1px 7px rgba(0,0,0,.2) !important;
+}
+.profile_picture{
+  position: absolute;
+  top: 0;
+  right: 50px;
+  left: auto;
+  width: 65px;
+  border: none;
+  border-radius: 3px;
+  padding: 0;
+  z-index: 999;
+  box-shadow: 1px 1px 7px rgba(0,0,0,.2);
+  -moz-box-shadow: 1px 1px 7px rgba(0,0,0,.2);
+  -webkit-box-shadow: 1px 1px 7px rgba(0,0,0,.2);
+  -ms-box-shadow: 1px 1px 7px rgba(0,0,0,.2);
+  -o-box-shadow: 1px 1px 7px rgba(0,0,0,.2);
+  background: #fff;
+}
+.main_profile_picture{
+  @extend .profile_picture;
+  right: 25px;
 }
 
 .slide_icon:focus, .slide_icon:active, .slide_icon.active, .slide_icon:focus:active {
@@ -229,11 +369,21 @@ show_list2{
   .hidden-xs{
     display: none;
   }
+  .w-xs-100{
+    width: 100% !important;
+  }
 }
-
+@media (max-width:576px ) {
+  .main_slider{
+    height: 200px;
+  }
+}
 @media (min-width: 576px) and (max-width: 767.98px) {
   .hidden-sm{
     display: none;
+  }
+  .main_slider{
+    height: 200px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {

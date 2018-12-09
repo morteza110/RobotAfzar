@@ -23,3 +23,12 @@ function hide_main_list () {
   main_list.style.display= 'none';
 }
 
+function show_search_box () {
+  let search_box = document.getElementById('search_box');
+  search_box.style.display= 'block';
+}
+
+function hide_search_box () {
+  let search_box = document.getElementById('search_box');
+  search_box.style.display = 'none'
+}
